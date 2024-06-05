@@ -261,23 +261,23 @@
         <div class="content has-text-justified">
           <p>
             As robots that follow natural language become more capable and prevalent, we need a 
-            dataset to develop and evaluate their ability to solve long-horizon mobile manipulation 
-            tasks in diverse environments. To tackle this challenge, robots must use their multimodal 
-            sensing, navigation, and manipulation capabilities. Existing datasets do not integrate 
-            all these aspects, restricting their efficacy as benchmarks. We present the <i>La</i>nguage, 
-            <i>N</i>avigation, <i>M</i>anipulation, <i>P</i>erception (<i>LaNMP</i>) dataset and show 
-            the benefits of integrating all robot capabilities and sensing modalities. 
+            benchmark to develop and evaluate their ability to solve long-horizon mobile manipulation 
+            tasks in large, diverse environments. To tackle this challenge, robots must use visual 
+            and language understanding, navigation, and manipulation capabilities. Existing datasets do not 
+            integrate all of these aspects, restricting their efficacy as benchmarks.
           </p>
           <p>
-            LaNMP comprises 573 natural language commands in seven simulated and real-world environments for 
-            long-horizon room-to-room pick-and-place tasks. Each command is paired with a trajectory comprised 
-            of over 20 data types, such as RGB-D images, segmentations, and the poses of the robot body, 
-            end-effector, and grasped object. LaNMP can be used to develop and benchmark a variety of 
-            algorithms. To demonstrate its applicability, we fine-tuned and tested three pretrained models 
-            in simulation and one on a physical robot. The suboptimal performance of all the models compared 
-            to humans across various metrics shows significant room for improvement in developing multimodal 
-            mobile manipulation models using our benchmark. 
-          </p>
+            To address this gap, we present the <i>La</i>nguage, <i>N</i>avigation, <i>M</i>anipulation, 
+            <i>P</i>erception (<i>LaNMP</i>) dataset and demonstrate the benefits of integrating these 
+            four capabilities and various modalities. LaNMP comprises 574 trajectories across 8 simulated 
+            and real-world environments for long-horizon room-to-room pick-and-place tasks specified by 
+            natural language. Every trajectory consists of over 20 modalities, including RGB-D images, 
+            segmentations, and the poses of the robot body, end-effector, and grasped objects. To demonstrate 
+            its efficacy in development and evaluation, we fine-tuned and tested two models in simulation and 
+            on a physical robot. The models perform suboptimally compared to humans across various metrics, 
+            indicating significant room for developing better multimodal mobile manipulation models using our 
+            benchmark.
+         </p>
         </div>
       </div>
     </div>
