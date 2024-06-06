@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Dataset, Language, Navigation, Perception, Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LaNMP: A Dataset of Language, Navigation, Manipulation, and Perception</title>
+  <title>LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src=" "></script>
@@ -91,24 +91,27 @@
           <h1 class="title is-1 publication-title">LaNMP: A Dataset of Language, Navigation, Manipulation, and Perception</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="">Ifrah Idrees</a><sup>1</sup>,</span>
+              <a href="">Ahmed Jaafar</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href=" ">Ahmed Jaafar</a><sup>1</sup>,</span>
+              <a href=" ">Shreyas Sundara Raman</a><sup>1</sup>,</span>
             </span>
             <span class="author-block">
-              <a href=" ">Sofia Juliani</a><sup>2</sup>,
+              <a href=" ">Yichen Wei</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="">Jason Xinyu Liu</a><sup>1</sup>,
+              <a href="">Sofia Juliani</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href=" ">Shreyas Sundara Raman</a><sup>1</sup>,
+              <a href=" ">Anneke Wernerfelt</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href=" ">Yichen Wei</a><sup>1</sup>
+              <a href=" "></a>Ifrah Idrees<sup>1</sup>
             </span>
             <span class="author-block">
-              <a href=" ">Anneke Wernerfelt</a><sup>3</sup>
+              <a href=" ">Jason Xinyu Liu</a><sup>3</sup>
+            </span>
+            <span class="author-block">
+              <a href=" ">Stefanie Tellex</a><sup>3</sup>
             </span>
           </div>
 
@@ -260,23 +263,21 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            As robots that follow natural language become more capable and prevalent, we need a 
-            benchmark to develop and evaluate their ability to solve long-horizon mobile manipulation 
-            tasks in large, diverse environments. To tackle this challenge, robots must use visual 
-            and language understanding, navigation, and manipulation capabilities. Existing datasets do not 
-            integrate all of these aspects, restricting their efficacy as benchmarks.
-          </p>
+            As robots that follow natural language become more capable and prevalent, we need a benchmark to 
+            holistically develop and evaluate their ability to solve long-horizon mobile manipulation tasks 
+            in large, diverse environments. To tackle this challenge, robots must use visual and language 
+            understanding, navigation, and manipulation capabilities. Existing datasets do not integrate all 
+            of these aspects, restricting their efficacy as benchmarks.
+         </p>
           <p>
-            To address this gap, we present the <i>La</i>nguage, <i>N</i>avigation, <i>M</i>anipulation, 
-            <i>P</i>erception (<i>LaNMP</i>) dataset and demonstrate the benefits of integrating these 
-            four capabilities and various modalities. LaNMP comprises 574 trajectories across 8 simulated 
-            and real-world environments for long-horizon room-to-room pick-and-place tasks specified by 
-            natural language. Every trajectory consists of over 20 modalities, including RGB-D images, 
-            segmentations, and the poses of the robot body, end-effector, and grasped objects. To demonstrate 
-            its efficacy in development and evaluation, we fine-tuned and tested two models in simulation and 
-            on a physical robot. The models perform suboptimally compared to humans across various metrics, 
-            indicating significant room for developing better multimodal mobile manipulation models using our 
-            benchmark.
+            To address this gap, we present the <b>La</b>nguage, <b>N</b>avigation, <b>M</b>anipulation, 
+            <b>P</b>erception (<b>LaNMP</b>) dataset and demonstrate the benefits of integrating these 
+            four capabilities and various modalities. LaNMP comprises 574 trajectories across eight simulated 
+            and real-world environments for long-horizon room-to-room pick-and-place tasks specified by natural language.
+            Every trajectory consists of over 20 attributes, including RGB-D images, segmentations, and the poses of the robot 
+            body, end-effector, and grasped objects. To demonstrate its efficacy in development and evaluation, we fine-tuned 
+            and tested two models in simulation and on a physical robot. The models perform suboptimally compared to humans 
+            across various metrics, indicating significant room for developing better multimodal mobile manipulation models using our benchmark.
          </p>
         </div>
       </div>
@@ -298,7 +299,7 @@
 </section>
 
 
-<section class="section">
+<!-- <section class="section">
 
   <!-- Models. -->
     <div class="columns is-centered">
@@ -322,7 +323,7 @@
       </div>
     </div>
     <!--/ Models. -->
-</section>
+</section> -->
 
 
 <!-- <section class="section" id="BibTeX">
