@@ -7,6 +7,27 @@
   <meta name="keywords" content="Dataset, Language, Navigation, Perception, Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots</title>
+  <style>
+    .code-container {
+            display: flex;
+            gap: 20px; /* Adjust gap as needed */
+        }
+    .code-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    pre {
+        text-align: left;
+        margin: 0;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #f9f9f9;
+        width: 300px; /* Adjust width as needed */
+        box-sizing: border-box;
+    }
+  </style>
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src=" "></script>
@@ -91,27 +112,27 @@
           <h1 class="title is-1 publication-title">LaNMP: A Language-Conditioned Mobile Manipulation Benchmark for Autonomous Robots</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="http://ahmedj.dev">Ahmed Jaafar,</a>
+              <a href="http://ajaafar.com">Ahmed Jaafar<sup>1</sup>,</a>
             <span class="author-block">
-              <a href="https://shreyasraman.netlify.app/">Shreyas Sundara Raman,</a>
+              <a href="https://shreyasraman.netlify.app/">Shreyas Sundara Raman<sup>1</sup>,</a>
             </span>
             <span class="author-block">
-             <a href="https://github.com/waymao">Yichen Wei,</a> 
+             <a href="https://github.com/waymao">Yichen Wei<sup>1</sup>,</a> 
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/sofia-juliani/">Sofia Juliani,</a>
+              <a href="https://www.linkedin.com/in/sofia-juliani/">Sofia Juliani<sup>2</sup>,</a>
             </span>
             <span class="author-block">
-              <a href="https://www.linkedin.com/in/annekewernerfelt/">Anneke Wernerfelt,</a>
+              <a href="https://www.linkedin.com/in/annekewernerfelt/">Anneke Wernerfelt<sup>3</sup>,</a>
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com/citations?user=OM1hDLcAAAAJ&hl=en">Ifrah Idrees,</a>
+              <a href="https://scholar.google.com/citations?user=OM1hDLcAAAAJ&hl=en">Ifrah Idrees<sup>1</sup>,</a>
             </span>
             <span class="author-block">
-              <a href="https://jasonxyliu.github.io/">Jason Xinyu Liu,</a>
+              <a href="https://jasonxyliu.github.io/">Jason Xinyu Liu<sup>1</sup>,</a>
             </span>
             <span class="author-block">
-              <a href="https://cs.brown.edu/people/stellex/">Stefanie Tellex</a>
+              <a href="https://cs.brown.edu/people/stellex/">Stefanie Tellex<sup>1</sup></a>
             </span>
           </div>
 
@@ -120,17 +141,21 @@
             <span class="author-block"><sup>2</sup>Rutgers University,</span>
             <span class="author-block"><sup>3</sup>University of Pennsylvania</span>
           </div>
+          
+          <div>
+            <p style="color:red;">Under Review for NeurIPS Datasets & Benchmarks Track (Single Blind)</p>
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href=" "
+                <a href="https://drive.google.com/file/d/1WrXeRNrtur26o2s4jT4M4vT0IsOxcqug/view?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
-                  <span>Paper</span>
+                  <span>RSS Workshop Paper</span>
                 </a>
               </span>
               <span class="link-block">
@@ -139,7 +164,7 @@
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv (Coming Soon)</span>
                 </a>
               </span>
               <!-- Video Link. -->
@@ -184,6 +209,8 @@
 <!-- <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
   <iframe width="700" height="394" src="https://youtu.be/IKfcDu_4k4o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div> -->
+
+<br>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
   <iframe width="700" height="394" src="https://www.youtube.com/embed/IKfcDu_4k4o?si=BGzt6LK4JtJkdqa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -265,6 +292,8 @@
   </div>
 </section> -->
 
+<br>
+<br>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -309,11 +338,11 @@
   </div>
 </section>
 
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Trajectories</h2>
+<section class="section" id="BibTeX" style="margin-top: 0; padding-top: 0;">
+  <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
+    <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
+      <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
+        <h2 class="title is-3" style="margin-top: - 5px;">Trajectories</h2>
         <div class="content has-text-justified">
   <div style="text-align: center;">
     <img src="traj_fig.png" alt="Trajectory figure" width="700"> 
@@ -323,18 +352,124 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
   <div style="text-align: center;">
+  <br>
   <h2 class="title is-3">Examples of the Data's Schema</h2>
-  <div style="text-align: center;">
+  <div class="code-container">
+    <div class="code-block">
+    <p>Simulation</p>
+    <pre><code>
+      {
+        "nl_command": "Find the pepper and put it on top of the green chair with a blue pillow on it.",
+        "scene": "FloorPlan_Train8_1",
+        "steps": [
+            {
+                "sim_time": 0.19645099341869354,
+                "wall-clock_time": "15:49:37.334",
+                "action": "Initialize",
+                "state_body": [ # robot pose
+                    3.0,
+                    0.9009992480278015,
+                    -4.5,
+                    269.9995422363281
+                ],
+                "state_ee": [ # end-effector pose
+                    2.5999975204467773,
+                    0.8979992270469666,
+                    -4.171003341674805,
+                    -1.9440563492718068e-07,
+                    -1.2731799533306385,
+                    1.9440386333307377e-07
+                ],
+                "hand_sphere_radius": 0.05999999865889549
+                "held_objs": [],
+                "held_objs_state": {},
+                "inst_det2D": {
+                    "keys": [ # identified instances in the environment
+                        "Wall_4|0.98|1.298|-2.63",
+                        "Wall_3|5.43|1.298|-5.218",
+                        "RemoteControl|+01.15|+00.48|-04.24",
+                        ...],
+                    "values": [ # bounding box coordinates of each instance
+                        [418, 43, 1139, 220],
+                        [315, 0, 417, 113],
+                        [728, 715, 760, 719],
+                        ...]
+                },
+                "rgb": "./rgb_0.npy", # path of visual data for this timestep
+                "depth": "./depth_0.npy",
+                "inst_seg": "./inst_seg_0.npy",
+            }
+          ]
+       }
+    </code></pre>
+    </div>
+    <div class="code-block">
+      <p>Real</p>
+    <pre><code>
+      {
+          "language_command": "Take the cup from the table in the dining area which is closest to the stairs and bring it to the table near the
+            couches in the corner of the big dining room besides the windows.",
+          "scene_name": "upstairs",
+          "wall_clock_time": "05:29:40.117",
+          "left_fisheye_rgb": "./Trajectories/trajectories/data_33/folder_0.zip/left_fisheye_image_0.npy", # path of visual data for this timestep
+          "left_fisheye_depth": "./Trajectories/trajectories/data_33/folder_0.zip/left_fisheye_depth_0.npy",
+          "right_fisheye_rgb": "./Trajectories/trajectories/data_33/folder_0.zip/right_fisheye_image_0.npy",
+          "right_fisheye_depth": "./Trajectories/trajectories/data_33/folder_0.zip/right_fisheye_depth_0.npy",
+          "gripper_rgb": "./Trajectories/trajectories/data_33/folder_0.zip/gripper_image_0.npy",
+          "gripper_depth": "./Trajectories/trajectories/data_33/folder_0.zip/gripper_depth_0.npy",
+          "left_fisheye_instance_seg": "./Trajectories/trajectories/data_33/folder_0.zip/left_fisheye_image_instance_seg_0.npy",
+          "right_fisheye_instance_seg": "./Trajectories/trajectories/data_33/folder_0.zip/right_fisheye_image_instance_seg_0.npy",
+          "gripper_fisheye_instance_seg": "./Trajectories/trajectories/data_33/folder_0.zip/gripper_image_instance_seg_0.npy",
+          "body_state": {"x": 1.3496176111016192, "y": 0.005613277629761049, "z": 0.15747965011090911},
+          "body_quaternion": {"w": 0.04275326839680784, "x": -0.0008884984706659231, "y": -0.00030123853590331847, "z": 0.999085220522855},
+          "body_orientation": {"r": -0.003024387647253151, "p": 0.017297610440263775, "y": 3.05395206999625},
+          "body_linear_velocity": {"x": 0.00015309476140765987, "y": 0.001022209848280799, "z": 0.0001717336942742603},
+          "body_angular_velocity": {"x": 4.532841128101956e-05, "y": 0.003003578426140623, "z": -0.0046712267592016726},
+          "arm_state_rel_body": {"x": 0.5535466074943542, "y": -0.00041040460928343236, "z": 0.2611726224422455},
+          "arm_quaternion_rel_body": {"w": 0.9999685287475586, "x": -0.0011630485532805324, "y": 0.007775876671075821, "z": 0.007775876671075821},
+          "arm_orientation_rel_body": {"x": -0.0023426745301198485, "y": 0.015549442728134426, "z": -0.0021046873064696214},
+          "arm_state_global": {"x": 0.7976601233169699, "y": -0.00041040460928343236, "z": 0.2611726224422455},
+          "arm_quaternion_global": {"w": 0.043804580215426665, "x": -0.008706641097541701, "y": -0.0011317045101892497, "z": 0.9990015291187636},
+          "arm_orientation_global": {"x": -0.003024387647253151, "y": 0.017297610440263775, "z": 3.05395206999625},
+          "arm_linear_velocity": {"x": 0.002919594927038712, "y": 0.004658882987521996, "z": 0.012878690074243797},
+          "arm_angular_velocity": {"x": -0.01867944403436315, "y": 0.02911512882983833, "z": -0.008279345145765714},
+          "arm_stowed": 1, # Boolean
+          "gripper_open_percentage": 0.39261579513549805,
+          "object_held": 0, # Boolean
+          "feet_state_rel_body": [
+              {"x": 0.3215886056423187, "y": 0.17115488648414612, "z": -0.5142754912376404},
+              {"x": 0.32302412390708923, "y": -0.17028175294399261, "z": -0.5178792476654053},
+              {"x": -0.27173668146133423, "y": 0.16949543356895447, "z": -0.5153297185897827},
+              {"x": -0.2700275778770447, "y": -0.1685962975025177, "z": -0.5157276391983032}],
+          "feet_state_global": [
+              {"x": -0.3341075772867149, "y": -0.14278573670828154, "z": -0.5149532673227382},
+              {"x": -0.3063631798978494, "y": 0.19752718640765313, "z": -0.518328069669068},
+              {"x": 0.25719142551156154, "y": -0.19181889447285838, "z": -0.5149682779363334},
+              {"x": 0.2843717159282008, "y": 0.1451830347804529, "z": -0.5151399962832868}],
+          "all_joint_angles": {
+              "fl.hx": 0.010119102895259857,
+              "fl.hy": 0.7966763973236084,
+              "fl.kn": -1.576759934425354, ...},
+          "all_joint_velocities": {
+              "fl.hx": -0.00440612155944109,
+              "fl.hy": -0.004167056642472744,
+              "fl.kn": -0.007508249022066593, ...}
+       }
+    </code></pre>
+    </div>
+</div>
+  <!-- <div style="text-align: center;">
     <img src="json_fig.png" alt="JSON figure" width="600"> 
   </div>
   <div style="text-align: center;">
     <img src="json_fig_real.png" alt="JSON figure" width="600"> 
-  </div>
+  </div> -->
     <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
   <div style="text-align: center;">
+    <br>
   <h2 class="title is-3">Metadata</h2>
     <div class="image123">
     <div class="imgContainer">
@@ -368,7 +503,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Environment Maps</h2>
+        <h2 class="title is-3">Real-World Maps</h2>
         <div class="content has-text-justified">
   <div style="text-align: center;">
     <img src="lab_maps.png" alt="Lab maps figure" width="700"> 
@@ -381,15 +516,6 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href=" ">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/ahmedjaafar6" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
