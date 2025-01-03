@@ -45,6 +45,11 @@
         width: 100%; /* Make pre block take full width of the .code-block */
         box-sizing: border-box;
     }
+    .hero {
+      background-color: #f5deb3; /* Your desired background color */
+      color: #000; /* Optional: Adjust text color for contrast */
+    }
+
   </style>
 
 
@@ -166,6 +171,7 @@
           
           <div>
             <p style="color:red;">Accepted at two CoRL 2024 and two RSS 2024 workshops</p>
+            <p style="color:red;">Currently Under Review</p>
           </div>
 
           <div class="column has-text-centered">
@@ -234,11 +240,9 @@
 
 <br>
 
-<div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
-  <iframe width="700" height="394" src="https://www.youtube.com/embed/IKfcDu_4k4o?si=BGzt6LK4JtJkdqa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="display: flex; justify-content: center; align-items: center; height: auto; margin-bottom: 4vh; margin-top: 4vh;">
+  <iframe style="width: 40%; height: 23vw;" src="https://www.youtube.com/embed/IKfcDu_4k4o?si=BGzt6LK4JtJkdqa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
-
 
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
@@ -314,9 +318,8 @@
   </div>
 </section> -->
 
-<br>
-
 <section class="section">
+  <div style="margin-top: -5vh;"></div>
   <div class="container is-max-desktop">
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
@@ -324,21 +327,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          As robots that follow natural language become more capable and prevalent, we need a benchmark to holistically
-          develop and evaluate their ability to solve long-horizon mobile manipulation tasks in large, diverse environments. 
-          To tackle this challenge, robots must use visual and language understanding, navigation, and manipulation capabilities. 
-          Existing datasets do not integrate all these aspects, restricting their efficacy as benchmarks.
-         </p>
-          <p>
-          To address this gap, we present the <b>La</b>nguage, <b>N</b>avigation, <b>M</b>anipulation, <b>P</b>erception (<b>LaNMP</b>) dataset and
-          demonstrate the benefits of integrating these four capabilities and various modalities. 
-          LaNMP comprises 574 trajectories across eight simulated and real-world environments for long-horizon
-          room-to-room pick-and-place tasks specified by natural language. Trajectories consists of over 20 attributes, 
-          including RGB-Dimages, segmentations, and the poses of the robot body, end-effector, and grasped objects. 
-          We fine-tuned and tested two models in simulation to demonstrate the benchmark’s efficacy in development and evaluation, 
-          as well as making models more sample efficient. The models performed suboptimally compared to humans across various metrics; 
-          however, showed promise in increasing model sample efficiency, indicating significant room for developing better multimodal 
-          mobile manipulation models using our benchmark.
+            Efficiently learning and executing long-horizon mobile manipulation (MoMa) tasks is crucial for advancing robotics in household and workplace settings. However, current MoMa models are data-inefficient, underscoring the need for improved models that require realistic-sized benchmarks to evaluate their efficiency, which do not exist. To address this, we introduce the LAMBDA (λ) benchmark (Long-horizon Actions for Mobile-manipulation Benchmarking of Directed Activities), which evaluates the data efficiency of models on language-conditioned, long-horizon, multi-room, multi-floor, pick-and-place tasks using a dataset of manageable size, more feasible for collection. The benchmark includes 571 human-collected demonstrations that provide realism and diversity in simulated and real-world settings. Unlike planner-generated data, these trajectories offer natural variability and replay-verifiability, ensuring robust learning and evaluation. We benchmark several models, including learning-based models and a neuro-symbolic modular approach combining foundation models with task and motion planning. Learning-based models show suboptimal success rates, even when leveraging pretrained weights, underscoring significant data inefficiencies. However, the neuro-symbolic approach performs significantly better while being more data efficient. Findings highlight the need for more data-efficient learning-based MoMa approaches. λ addresses this gap by serving as a key benchmark for evaluating the data efficiency of those future models in handling household robotics tasks.
          </p>
         </div>
       </div>
@@ -363,142 +352,26 @@
   <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
     <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
       <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
+        <h2 class="title is-3" style="margin-top: - 5px;">Overview</h2>
+        <div class="content has-text-justified">
+  <div style="text-align: center;">
+    <img src="lambda_cover.png" alt="Overview figure" style="width: 80vw; height: auto;">
+  </div>
+
+  <br>
+  <br>
+
+<section class="section" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">
+  <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
+    <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
+      <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
         <h2 class="title is-3" style="margin-top: - 5px;">Trajectories</h2>
         <div class="content has-text-justified">
   <div style="text-align: center;">
-    <img src="traj_fig.png" alt="Trajectory figure" width="700"> 
+    <img src="traj_fig.png" alt="Trajectory figure" style="width: 80vw; height: auto;"> 
   </div>
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-  <div style="text-align: center;">
-  <br>
-  <h2 class="title is-3">Examples of the Data's Schema</h2>
-  <div class="code-container">
-    <div class="code-block">
-    <p>Simulation - at every time step of the 524 trajectories</p>
-    <pre><code>
-      {
-        "nl_command": "Find the pepper and put it on top of the green chair with a blue pillow on it.",
-        "scene": "FloorPlan_Train8_1",
-        "steps": [
-            {
-                "sim_time": 0.19645099341869354,
-                "wall-clock_time": "15:49:37.334",
-                "action": "Initialize",
-                "state_body": [ # robot pose
-                    3.0,
-                    0.9009992480278015,
-                    -4.5,
-                    269.9995422363281
-                ],
-                "state_ee": [ # end-effector pose
-                    2.5999975204467773,
-                    0.8979992270469666,
-                    -4.171003341674805,
-                    -1.9440563492718068e-07,
-                    -1.2731799533306385,
-                    1.9440386333307377e-07
-                ],
-                "hand_sphere_radius": 0.05999999865889549
-                "held_objs": [],
-                "held_objs_state": {},
-                "inst_det2D": {
-                    "keys": [ # identified instances in the environment
-                        "Wall_4|0.98|1.298|-2.63",
-                        "Wall_3|5.43|1.298|-5.218",
-                        "RemoteControl|+01.15|+00.48|-04.24",
-                        ...],
-                    "values": [ # bounding box coordinates of each instance
-                        [418, 43, 1139, 220],
-                        [315, 0, 417, 113],
-                        [728, 715, 760, 719],
-                        ...]
-                },
-                "rgb": "./rgb_0.npy", # path of visual data for this timestep
-                "depth": "./depth_0.npy",
-                "inst_seg": "./inst_seg_0.npy",
-            }
-          ]
-       }
-    </code></pre>
-    </div>
-    <div class="code-block">
-      <p>Real - at every time step of the 50 trajectories</p>
-    <pre><code>
-      {
-          "language_command": "Take the cup from the table in the dining area which is closest to the stairs and bring it to the table near the
-            couches in the corner of the big dining room besides the windows.",
-          "scene_name": "upstairs",
-          "wall_clock_time": "05:29:40.117",
-          "left_fisheye_rgb": "./Trajectories/trajectories/data_33/folder_0.zip/left_fisheye_image_0.npy", # path of visual data for this timestep
-          "left_fisheye_depth": "./Trajectories/trajectories/data_33/folder_0.zip/left_fisheye_depth_0.npy",
-          "right_fisheye_rgb": "./Trajectories/trajectories/data_33/folder_0.zip/right_fisheye_image_0.npy",
-          "right_fisheye_depth": "./Trajectories/trajectories/data_33/folder_0.zip/right_fisheye_depth_0.npy",
-          "gripper_rgb": "./Trajectories/trajectories/data_33/folder_0.zip/gripper_image_0.npy",
-          "gripper_depth": "./Trajectories/trajectories/data_33/folder_0.zip/gripper_depth_0.npy",
-          "left_fisheye_instance_seg": "./Trajectories/trajectories/data_33/folder_0.zip/left_fisheye_image_instance_seg_0.npy",
-          "right_fisheye_instance_seg": "./Trajectories/trajectories/data_33/folder_0.zip/right_fisheye_image_instance_seg_0.npy",
-          "gripper_fisheye_instance_seg": "./Trajectories/trajectories/data_33/folder_0.zip/gripper_image_instance_seg_0.npy",
-          "body_state": {"x": 1.3496176111016192, "y": 0.005613277629761049, "z": 0.15747965011090911},
-          "body_quaternion": {"w": 0.04275326839680784, "x": -0.0008884984706659231, "y": -0.00030123853590331847, "z": 0.999085220522855},
-          "body_orientation": {"r": -0.003024387647253151, "p": 0.017297610440263775, "y": 3.05395206999625},
-          "body_linear_velocity": {"x": 0.00015309476140765987, "y": 0.001022209848280799, "z": 0.0001717336942742603},
-          "body_angular_velocity": {"x": 4.532841128101956e-05, "y": 0.003003578426140623, "z": -0.0046712267592016726},
-          "arm_state_rel_body": {"x": 0.5535466074943542, "y": -0.00041040460928343236, "z": 0.2611726224422455},
-          "arm_quaternion_rel_body": {"w": 0.9999685287475586, "x": -0.0011630485532805324, "y": 0.007775876671075821, "z": 0.007775876671075821},
-          "arm_orientation_rel_body": {"x": -0.0023426745301198485, "y": 0.015549442728134426, "z": -0.0021046873064696214},
-          "arm_state_global": {"x": 0.7976601233169699, "y": -0.00041040460928343236, "z": 0.2611726224422455},
-          "arm_quaternion_global": {"w": 0.043804580215426665, "x": -0.008706641097541701, "y": -0.0011317045101892497, "z": 0.9990015291187636},
-          "arm_orientation_global": {"x": -0.003024387647253151, "y": 0.017297610440263775, "z": 3.05395206999625},
-          "arm_linear_velocity": {"x": 0.002919594927038712, "y": 0.004658882987521996, "z": 0.012878690074243797},
-          "arm_angular_velocity": {"x": -0.01867944403436315, "y": 0.02911512882983833, "z": -0.008279345145765714},
-          "arm_stowed": 1, # Boolean
-          "gripper_open_percentage": 0.39261579513549805,
-          "object_held": 0, # Boolean
-          "feet_state_rel_body": [
-              {"x": 0.3215886056423187, "y": 0.17115488648414612, "z": -0.5142754912376404},
-              {"x": 0.32302412390708923, "y": -0.17028175294399261, "z": -0.5178792476654053},
-              {"x": -0.27173668146133423, "y": 0.16949543356895447, "z": -0.5153297185897827},
-              {"x": -0.2700275778770447, "y": -0.1685962975025177, "z": -0.5157276391983032}],
-          "feet_state_global": [
-              {"x": -0.3341075772867149, "y": -0.14278573670828154, "z": -0.5149532673227382},
-              {"x": -0.3063631798978494, "y": 0.19752718640765313, "z": -0.518328069669068},
-              {"x": 0.25719142551156154, "y": -0.19181889447285838, "z": -0.5149682779363334},
-              {"x": 0.2843717159282008, "y": 0.1451830347804529, "z": -0.5151399962832868}],
-          "all_joint_angles": {
-              "fl.hx": 0.010119102895259857,
-              "fl.hy": 0.7966763973236084,
-              "fl.kn": -1.576759934425354, ...},
-          "all_joint_velocities": {
-              "fl.hx": -0.00440612155944109,
-              "fl.hy": -0.004167056642472744,
-              "fl.kn": -0.007508249022066593, ...}
-       }
-    </code></pre>
-    </div>
-</div>
-  <!-- <div style="text-align: center;">
-    <img src="json_fig.png" alt="JSON figure" width="600"> 
-  </div>
-  <div style="text-align: center;">
-    <img src="json_fig_real.png" alt="JSON figure" width="600"> 
-  </div> -->
-    <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-  <div style="text-align: center;">
-    <br>
-  <h2 class="title is-3">Metadata</h2>
-    <div class="image123">
-      <p>Environment counts, action distribution, and trajectory lengths. </p>
-    <div class="imgContainer">
-        <img src="traj_2x2.png" width="700em"/>
-    </div>
-</div>
-    
+  
+  
 <!--   <div style="text-align: center;">
     <img src="annie_1.png" alt="JSON figure" width="300"> 
   </div>
@@ -520,46 +393,38 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Real-World Maps</h2>
-        <div class="content has-text-justified">
-          <p>The maps of the environments made by the robot to be used for data collection. On the left is the 2D visualization and on the right is a 3D point cloud of the environment. The top row depicts the laboratory and the bottom row depicts the multi-floor university building environments.</p>
-  <div style="text-align: center;">
-    <img src="lab_maps.png" alt="Lab maps figure" width="700em"> 
-  </div>
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified">
-</section>
-
-
-<section class="section">
+<!-- <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
     <h2 class="title is-3">Acknowledgements</h2>
     <div style="max-width: 40em; margin: 0 auto;"> <!-- Adjust the max-width as needed -->
-      <p>
+      <!-- <p>
         This work is supported by ONR under grant award numbers N00014-22-1-2592 and N00014-23-1-2794, NSF under grant award number CNS-2150184, and with support from Amazon Robotics.
     We also thank Aryan Singh, George Chemmala, Ziyi Yang, David Paulius, Ivy He, Lakshita Dodeja, Mingxi Jia, Benned Hedegaard, Thao Nguyen, Selena Williams, Benedict Quartey, Tuluhan Akbulut, and George Konidaris for their help in various phases of work.
       </p>
     </div>
   </div>
 </div>
-</section>
+</section> -->
 
 
 <section class="section">
+  <div style="margin-top: -11vh;"></div>
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
   <h2 class="title is-3">BibTeX</h2>
 <div class="code-container">
-  <div class="code-block">
+  <div class="code-block" style="flex: 1 1 90%; max-width: 65%;">
   <pre><code>
-    Coming Soon!
+    @misc{lambdabenchmark,
+      title={{\lambda}: A Benchmark for Data-Efficiency in Long-Horizon Indoor Mobile Manipulation Robotics}, 
+      author={Ahmed Jaafar and Shreyas Sundara Raman and Yichen Wei and Sofia Juliani and Anneke Wernerfelt and Benedict Quartey and Ifrah Idrees and Jason Xinyu Liu and Stefanie Tellex},
+      year={2025},
+      eprint={2412.05313},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2412.05313}, 
+    }
   </code></pre>
 </div>
 </div>
@@ -567,7 +432,7 @@
 </section>
 
 
-<footer class="footer">
+<footer class="footer" style="padding: 0; display: flex; align-items: center; justify-content: center; text-align: center; background-color: #f5f5f5;">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
