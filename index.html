@@ -1,60 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="index.css">
   <meta charset="utf-8">
   <meta name="description"
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Dataset, Language, Navigation, Perception, Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>λ: A Benchmark for Data-Efficiency in Long-Horizon Indoor Mobile Manipulation Robotics</title>
-  <style>
-    .code-container {
-      display: flex;
-      flex-wrap: wrap; /* Allow wrapping of code blocks */
-      gap: 20px; /* Adjust gap as needed */
-      justify-content: center; /* Center the code blocks */
-      padding: 10px; /* Add padding to prevent overflow */
-      box-sizing: border-box; /* Ensure padding is included in the width */
-    }
-    .code-block {
-        flex: 1 1 45%; /* Allow code blocks to shrink and grow, with a base width of 45% */
-        max-width: 45%; /* Ensure code blocks don’t exceed 45% of the container width */
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        box-sizing: border-box; /* Ensure padding is included in the width */
-    }
-    @media (max-width: 1000px) {
-        .code-block {
-            flex: 1 1 90%; /* On smaller screens, make code blocks take 90% of the width */
-            max-width: 90%; /* Ensure code blocks don’t exceed 90% of the container width */
-        }
-    }
-    @media (max-width: 600px) {
-        .code-block {
-            flex: 1 1 100%; /* On very small screens, make code blocks full width */
-            max-width: 100%; /* Ensure code blocks don’t exceed the container width */
-        }
-    }
-    pre {
-        text-align: left;
-        margin: 0;
-        padding: 10px;
-        border: 1px solid #ddd;
-        background-color: #f9f9f9;
-        width: 100%; /* Make pre block take full width of the .code-block */
-        box-sizing: border-box;
-    }
-    .hero {
-      background-color: #d6b46f;/*#f5deb3; /* Your desired background color */
-      color: #000; /* Optional: Adjust text color for contrast */
-    }
 
-  </style>
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src=" "></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -71,62 +26,16 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/favicon.jpeg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
 <body>
-
-<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href=" ">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
-      </a>
-
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
-          </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</nav> -->
-
 
 <section class="hero">
   <div class="hero-body">
@@ -174,7 +83,7 @@
           
           <div>
             <a href="https://www.iros25.org/">
-              <p style="color:#a16c6c; font-size: 24px;"><b>IROS 2025</b></p>
+              <p style="color:white; font-size: 24px;"><b>IROS 2025</b></p>
             </a>
             
           </div>
@@ -237,90 +146,12 @@
   </div>
 </section>
 
-
-<!-- <div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
-  <iframe width="700" height="394" src="https://youtu.be/IKfcDu_4k4o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div> -->
-
 <br>
 
+<!-- Video -->
 <div style="display: flex; justify-content: center; align-items: center; height: auto; margin-bottom: 4vh; margin-top: 4vh;">
   <iframe style="width: 40%; height: 23vw;" src="https://www.youtube.com/embed/CJL5X23rq34?si=bwbidpeJhDu4p88R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
-
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
-
-<!-- <section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/steve.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/chair-tp.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/shiba.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/fullbody.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/blueshirt.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/mask.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/coffee.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/toby2.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 <section class="section">
   <div style="margin-top: -5vh;"></div>
@@ -331,28 +162,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Efficiently learning and executing long-horizon mobile manipulation (MoMa) tasks is crucial for advancing robotics in household and workplace settings. However, current MoMa models are data-inefficient, underscoring the need for improved models that require realistic-sized benchmarks to evaluate their efficiency, which do not exist. To address this, we introduce the LAMBDA (λ) benchmark (Long-horizon Actions for Mobile-manipulation Benchmarking of Directed Activities), which evaluates the data efficiency of models on language-conditioned, long-horizon, multi-room, multi-floor, pick-and-place tasks using a dataset of manageable size, more feasible for collection. The benchmark includes 571 human-collected demonstrations that provide realism and diversity in simulated and real-world settings. Unlike planner-generated data, these trajectories offer natural variability and replay-verifiability, ensuring robust learning and evaluation. We benchmark several models, including learning-based models and a neuro-symbolic modular approach combining foundation models with task and motion planning. Learning-based models show suboptimal success rates, even when leveraging pretrained weights, underscoring significant data inefficiencies. However, the neuro-symbolic approach performs significantly better while being more data efficient. Findings highlight the need for more data-efficient learning-based MoMa approaches. λ addresses this gap by serving as a key benchmark for evaluating the data efficiency of those future models in handling household robotics tasks.
+            Efficiently learning and executing long-horizon mobile manipulation (MoMa) tasks is crucial for advancing robotics in household and workplace settings. However, current MoMa models are data-inefficient, underscoring the need for improved models that require realistic-sized benchmarks to evaluate their efficiency, which do not exist. To address this, we introduce the <b>LAMBDA (λ)</b> benchmark (Long-horizon Actions for Mobile-manipulation Benchmarking of Directed Activities), which evaluates the data efficiency of models on language-conditioned, long-horizon, multi-room, multi-floor, pick-and-place tasks using a dataset of manageable size, more feasible for collection. The benchmark includes <b>571</b> human-collected demonstrations that provide realism and diversity in simulated and real-world settings. Unlike planner-generated data, these trajectories offer natural variability and replay-verifiability, ensuring robust learning and evaluation. We benchmark several models, including learning-based models and a neuro-symbolic modular approach combining foundation models with task and motion planning. Learning-based models show suboptimal success rates, even when leveraging pretrained weights, underscoring significant data inefficiencies. However, the neuro-symbolic approach performs significantly better while being more data efficient. Findings highlight the need for more data-efficient learning-based MoMa approaches. λ addresses this gap by serving as a key benchmark for evaluating the data efficiency of those future models in handling household robotics tasks.
          </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-<!--     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
   </div>
 </section>
 
-<section style="background-color: #a16c6c; padding: 2rem;">
+<section style="background-color: #bb8d8d; padding: 2rem;">
 <section class="section" style="margin-top: 0; padding-top: 0;">
   <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
     <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
@@ -360,7 +178,39 @@
         <h2 class="title is-3" style="margin-top: - 5px;">Overview</h2>
         <div class="content has-text-justified">
   <div style="text-align: center;">
-    <img src="lambda_cover.png" alt="Overview figure" style="width: 100%; height: auto;">
+    <img src="lambda_cover.png" alt="Overview figure"               
+    style="
+    display: inline-block;        /* for text-align centering */
+    transform: scale(1.25);       /* make it 125% as big */
+    transform-origin: top center; /* grow *downward* only */
+    margin-bottom: 7rem;
+  ">
+  </div>
+  
+  <br>
+
+  <div class="content has-text-justified">
+    <p>
+      Improving data efficiency for long-horizon mobile manipulation (MoMa) tasks is critical for practical robotic deployment in human environments. Current approaches demand large-scale datasets, which are costly and resource-intensive. To bridge this gap, we introduce the LAMBDA (λ) benchmark, a dataset with 571 language-conditioned, human-collected demonstrations covering diverse indoor multi-room, multi-floor pick-and-place tasks. Unlike existing large datasets, λ emphasizes data efficiency, realistic variability, and replay-verifiability, serving as a valuable testbed for developing robust, practical MoMa models.
+   </p>
+
+   <br>
+
+   <div style="text-align: center;">
+    <img src="rw.png" alt="Related works figure" 
+    style="
+    display: inline-block;        /* for text-align centering */
+    transform: scale(1.25);       /* make it 125% as big */
+    transform-origin: top center; /* grow *downward* only */
+    margin-bottom: 6rem;
+  ">
+  </div>
+
+  <br>
+
+   <p>
+    Existing benchmarks for MoMa robotics often lack critical elements necessary for real-world applicability, such as natural language conditioning, long-horizon tasks, human-collected demonstrations, and real-world validation. Most benchmarks either rely on planner-generated data, templated commands, or are restricted to tabletop manipulation, limiting their realism and utility. Very few benchmarks offer free-form natural language instructions, quadruped robot data, or multi-room/floor navigation. The λ benchmark uniquely integrates all these elements, addressing significant gaps and providing a comprehensive evaluation framework for realistic, long-horizon MoMa tasks.
+   </p>
   </div>
 
   <br>
@@ -379,9 +229,15 @@
               <img
                 src="traj_fig.png"
                 alt="Trajectory figure"
-                style="width: 80vw; height: auto; display: inline-block;"
-              >
+                style="
+                  display: inline-block;        /* for text-align centering */
+                  transform: scale(1.25);       /* make it 125% as big */
+                  transform-origin: top center; /* grow *downward* only */
+                  margin-bottom: 6rem;
+                ">
             </div>
+            
+            <br>
   
             <!-- second image bumped to 100vw (wider than the first) -->
             <div style="text-align: center; margin-top: 1rem; overflow: visible;">
@@ -391,7 +247,14 @@
                 style="width:45vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
               >
             </div>
-  
+
+            <br>
+
+            <p>
+              The λ benchmark assesses models' data efficiency specifically for long-horizon mobile manipulation tasks involving language-conditioned, room-to-room, and floor-to-floor pick-and-place activities. It comprises 571 expert human-collected demonstrations, blending simulated data (521 trajectories) with real-world data (50 trajectories), reflecting diverse objects, instructions, and realistic complexity. Tasks are specified via crowdsourced free-form natural language instructions, challenging models to generalize robustly across varied linguistic expressions. The use of both simulated environments and real-world data ensures comprehensive and practical evaluation.
+            </p>
+
+
           </div>
         </div>
       </div>
@@ -403,8 +266,8 @@
   <br>
 
   <section class="section" style="padding: 0; overflow: visible;">
-    <div class="container is-fluid" style="padding: 0; overflow: visible;">
-      <div class="columns"
+    <div class="container is-max-desktop" style="padding: 0; overflow: visible;">
+            <div class="columns"
            style="padding: 0; overflow: visible; display: flex; justify-content: center;">
         <div class="column" style="padding: 0; overflow: visible;">
   
@@ -422,35 +285,47 @@
                 style="text-align: center; margin-bottom: 1rem;">
               Results
             </h2>
-  
-            <!-- row that fills the full 200% wrapper -->
-            <div class="images-row"
-                 style="
-                   display: flex;
-                   justify-content: center;
-                   gap: 2%;
-                   width: 110%;
-                   overflow: visible;
-                 ">
-              <img src="scene_gen.png"
-                   alt="Scene generation 1"
-                   style="
-                     width: 41%;
-                     max-width: none;
-                     height: auto;
-                     display: block;
-                   ">
-  
-              <img src="task_gen.png"
-                   alt="Scene generation 2"
-                   style="
-                     width: 35%;
-                     max-width: none;
-                     height: auto;
-                     display: block;
-                   ">
             </div>
-          </div>
+            
+            <p>
+              To establish baseline performance for λ, we benchmarked two behavior cloning (BC) models: RT-1, a transformer-based MoMa model originally trained on large-scale robot data, and MotionGlot-MoMa, an adapted version of MotionGlot designed for multi-embodiment action generation. Both models were evaluated when trained from scratch and after fine-tuning their pretrained parameters. Additionally, we evaluated LIMP, a zero-shot neuro-symbolic system integrating large multimodal foundation models with task and motion planning, requiring no robot demonstration training. Models were assessed using a success rate metric, where tasks comprise sequential subtasks: navigating to an object, grasping, transporting, and placing it at the goal location, measuring performance comprehensively across long-horizon tasks.
+            </p>
+
+            <br>
+
+            <div class="wide-bleed" style="text-align: center; margin-top: 1rem; overflow: visible;">
+              <img
+                src="scene_gen.png"
+                alt="Scene generalization experiment figure"
+                style="width:33vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
+              >
+            </div>
+
+            <br>
+
+            <p>
+              RT-1 and MG-MoMa achieved low success rates averaging 2.7% and 2.4%, respectively, indicating significant challenges in generalizing to unseen environments with novel room layouts and object placements. Both models marginally surpassed a random baseline, confirming minimal learning. Performance varied slightly across scenes based on complexity and spatial constraints, with simpler tasks achieving slightly higher scores. Overall, the results underscore current limitations in end-to-end models for scene generalization in long-horizon MoMa tasks.
+            </p>
+
+            <br>
+
+            <div style="text-align: center; margin-top: 1rem; overflow: visible;">
+              <img
+                src="task_gen.png"
+                alt="Task generalization experiment figure"
+                style="width:33vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
+              >
+            </div>
+            
+            <br>
+
+
+            <p>
+              In task generalization, RT-1 and MG-MoMa exhibited slightly improved but still low success rates, around 5%. Fine-tuning these models with pretrained parameters did not substantially enhance performance, indicating limited benefits from pretraining on external data. Conversely, LIMP, the zero-shot neuro-symbolic system, significantly outperformed end-to-end models with a 44.4% success rate. This result highlights the promise of neuro-symbolic approaches in generalizing to novel tasks without robot-specific demonstration training.
+            </p>
+
+     
+
   
         </div>
       </div>
@@ -474,18 +349,28 @@
               src="ablations.png"
               alt="Ablations figure"
               style="
-                display: inline-block;        /* for text-align centering */
-                transform: scale(1.25);       /* make it 125% as big */
-                transform-origin: top center; /* grow *downward* only */
+                display: inline-block;
+                transform: scale(1.25);
+                transform-origin: top center;
               "
             >
-          </div>          
+          </div>  
+        </div>
+      </div>
+    </div>
   </section>
-          
-  <br>
-  <br>
-  <br>
   
+  <div class="container is-max-desktop" style="margin-top: 7rem;">
+    <p>
+      We investigated how varying dataset sizes and model architectures impact data efficiency in MoMa tasks. Increasing the dataset size from 25% to 100% led to modest performance improvements for RT-1, indicating data inefficiency. Architectural comparisons revealed that replacing RT-1's transformer with a Mamba architecture (RM-1) resulted in consistently better performance across all dataset sizes, outperforming both the transformer and LSTM alternatives. These findings suggest that architectural choices significantly influence data efficiency, with Mamba-based models demonstrating superior generalization capabilities for long-horizon MoMa tasks.
+    </p>
+  </div>
+  
+
+  <br>
+  <br>
+  <br>
+
   </section>
 
   </div>

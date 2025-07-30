@@ -1,0 +1,47 @@
+.code-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of code blocks */
+    gap: 20px; /* Adjust gap as needed */
+    justify-content: center; /* Center the code blocks */
+    padding: 10px; /* Add padding to prevent overflow */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  .code-block {
+      flex: 1 1 45%; /* Allow code blocks to shrink and grow, with a base width of 45% */
+      max-width: 45%; /* Ensure code blocks don’t exceed 45% of the container width */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  @media (max-width: 1000px) {
+      .code-block {
+          flex: 1 1 90%; /* On smaller screens, make code blocks take 90% of the width */
+          max-width: 90%; /* Ensure code blocks don’t exceed 90% of the container width */
+      }
+  }
+  @media (max-width: 600px) {
+      .code-block {
+          flex: 1 1 100%; /* On very small screens, make code blocks full width */
+          max-width: 100%; /* Ensure code blocks don’t exceed the container width */
+      }
+  }
+  pre {
+      text-align: left;
+      margin: 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f9f9f9;
+      width: 100%; /* Make pre block take full width of the .code-block */
+      box-sizing: border-box;
+  }
+  .hero {
+    background-color: #e0bf7f;/*#f5deb3; /* Your desired background color */
+    color: #000; /* Optional: Adjust text color for contrast */
+  }
+
+  .no-spacing {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
