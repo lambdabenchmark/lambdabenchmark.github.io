@@ -46,7 +46,7 @@
         box-sizing: border-box;
     }
     .hero {
-      background-color: #f5deb3; /* Your desired background color */
+      background-color: #d6b46f;/*#f5deb3; /* Your desired background color */
       color: #000; /* Optional: Adjust text color for contrast */
     }
 
@@ -173,20 +173,22 @@
           </div>
           
           <div>
-            <p style="color:red;">Accepted at CoRL 2024 and RSS 2024 workshops</p>
-            <p style="color:red;">Currently Under Review</p>
+            <a href="https://www.iros25.org/">
+              <p style="color:#a16c6c; font-size: 24px;"><b>IROS 2025</b></p>
+            </a>
+            
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href= "https://drive.google.com/file/d/1bGWD-1vLJxGUAPjtPG_lzD6I926Wyl8U/view?usp=sharing"
+                <a href= ""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-image"></i>
                   </span>
-                  <span>CoRL24 Workshop Poster</span>
+                  <span>Poster</span>
                   </a>
               </span>
               <span class="link-block">
@@ -350,6 +352,7 @@
   </div>
 </section>
 
+<section style="background-color: #a16c6c; padding: 2rem;">
 <section class="section" style="margin-top: 0; padding-top: 0;">
   <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
     <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
@@ -357,34 +360,134 @@
         <h2 class="title is-3" style="margin-top: - 5px;">Overview</h2>
         <div class="content has-text-justified">
   <div style="text-align: center;">
-    <img src="lambda_cover.png" alt="Overview figure" style="width: 80vw; height: auto;">
+    <img src="lambda_cover.png" alt="Overview figure" style="width: 100%; height: auto;">
   </div>
 
   <br>
   <br>
+  <br>
 
-<section class="section" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">
-  <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
-    <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
-      <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
-        <h2 class="title is-3" style="margin-top: - 5px;">Trajectories</h2>
-        <div class="content has-text-justified">
-  <div style="text-align: center;">
-    <img src="traj_fig.png" alt="Trajectory figure" style="width: 80vw; height: auto;"> 
-  </div>
+  <section class="section" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">
+    <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
+        <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
+          <h2 class="title is-3" style="margin-top: -5px;">Demonstrations</h2>
+          <div class="content has-text-justified">
+  
+            <!-- first image stays at 80vw -->
+            <div style="text-align: center;">
+              <img
+                src="traj_fig.png"
+                alt="Trajectory figure"
+                style="width: 80vw; height: auto; display: inline-block;"
+              >
+            </div>
+  
+            <!-- second image bumped to 100vw (wider than the first) -->
+            <div style="text-align: center; margin-top: 1rem; overflow: visible;">
+              <img
+                src="traj_split_table.png"
+                alt="Second demonstration figure"
+                style="width:45vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
+              >
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   
   
-<!--   <div style="text-align: center;">
-    <img src="annie_1.png" alt="JSON figure" width="300"> 
-  </div>
-  <div style="text-align: center;">
-    <img src="annie_2.png" alt="JSON figure" width="300"> 
-  </div>
-  <div style="text-align: center;">
-    <img src="annie_3.png" alt="JSON figure" width="300"> 
-  </div>
-  <div style="text-align: center;">
-    <img src="real_traj.png" alt="JSON figure" width="300">  -->
+  <br>
+  <br>
+
+  <section class="section" style="padding: 0; overflow: visible;">
+    <div class="container is-fluid" style="padding: 0; overflow: visible;">
+      <div class="columns"
+           style="padding: 0; overflow: visible; display: flex; justify-content: center;">
+        <div class="column" style="padding: 0; overflow: visible;">
+  
+          <!-- enlarge this from 130% → 200% -->
+          <div class="wide-bleed"
+               style="
+                 position: relative;
+                 width: 200%;
+                 max-width: none;
+                 left: 50%;
+                 transform: translateX(-50%);
+                 overflow: visible;
+               ">
+            <h2 class="title is-3"
+                style="text-align: center; margin-bottom: 1rem;">
+              Results
+            </h2>
+  
+            <!-- row that fills the full 200% wrapper -->
+            <div class="images-row"
+                 style="
+                   display: flex;
+                   justify-content: center;
+                   gap: 2%;
+                   width: 110%;
+                   overflow: visible;
+                 ">
+              <img src="scene_gen.png"
+                   alt="Scene generation 1"
+                   style="
+                     width: 41%;
+                     max-width: none;
+                     height: auto;
+                     display: block;
+                   ">
+  
+              <img src="task_gen.png"
+                   alt="Scene generation 2"
+                   style="
+                     width: 35%;
+                     max-width: none;
+                     height: auto;
+                     display: block;
+                   ">
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <section>
+    <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
+        <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
+          <h2 class="title is-3" style="margin-top: 0; margin-bottom: 1rem;">
+            Ablations
+          </h2>
+          <div style="text-align: center; margin-top: 1rem;">
+            <img
+              src="ablations.png"
+              alt="Ablations figure"
+              style="
+                display: inline-block;        /* for text-align centering */
+                transform: scale(1.25);       /* make it 125% as big */
+                transform-origin: top center; /* grow *downward* only */
+              "
+            >
+          </div>          
+  </section>
+          
+  <br>
+  <br>
+  <br>
+  
+  </section>
+
   </div>
   </div>
   </div>
@@ -395,20 +498,24 @@
 </section>
 
 
-<!-- <section class="section">
+<section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
     <h2 class="title is-3">Acknowledgements</h2>
     <div style="max-width: 40em; margin: 0 auto;"> <!-- Adjust the max-width as needed -->
-      <!-- <p>
+       <p>
         This work is supported by ONR under grant award numbers N00014-22-1-2592 and N00014-23-1-2794, NSF under grant award number CNS-2150184, and with support from Amazon Robotics.
-    We also thank Aryan Singh, George Chemmala, Ziyi Yang, David Paulius, Ivy He, Lakshita Dodeja, Mingxi Jia, Benned Hedegaard, Thao Nguyen, Selena Williams, Benedict Quartey, Tuluhan Akbulut, and George Konidaris for their help in various phases of work.
+    We also thank Aryan Singh, George Chemmala, Ziyi Yang, David Paulius, Ivy He, Lakshita Dodeja, Mingxi Jia, Benned Hedegaard, Thao Nguyen, Selena Williams, Tuluhan Akbulut, and George Konidaris for their help in various phases of work.
       </p>
     </div>
   </div>
 </div>
-</section> -->
+</section>
 
+<br>
+<br>
+<br>
+<br>
 
 <section class="section">
   <div style="margin-top: -11vh;"></div>
