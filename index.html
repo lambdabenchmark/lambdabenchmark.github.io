@@ -30,6 +30,11 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -45,16 +50,16 @@
           <h1 class="title is-1 publication-title">λ: A Benchmark for Data-Efficiency in Long-Horizon Indoor Mobile Manipulation Robotics</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="http://ajaafar.com">Ahmed Jaafar</a><sup>1</sup>,
+              <a href="http://ahmedjaafar.com">Ahmed Jaafar</a><sup>1</sup>,
             <span class="author-block">
               <a href="https://shreyasraman.netlify.app/">Shreyas Sundara Raman</a><sup>1</sup>,
             </span>
             <span class="author-block">
-             <a href="https://github.com/waymao">Yichen Wei</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://sudarshan-s-harithas.github.io/">Sudarshan Harithas</a><sup>1</sup>,
+              <a href="https://sudarshan-s-harithas.github.io/">Sudarshan Harithas</a><sup>1*</sup>,
              </span>
+            <span class="author-block">
+             <a href="https://www.linkedin.com/in/yichen-w-556349141/">Yichen Wei</a><sup>1*</sup>,
+            </span>
             <span class="author-block">
               <a href="https://www.linkedin.com/in/sofia-juliani/">Sofia Juliani</a><sup>2</sup>,
             </span>
@@ -90,16 +95,7 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href= ""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-image"></i>
-                  </span>
-                  <span>Poster</span>
-                  </a>
-              </span>
+              <!-- arxiv -->
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2412.05313"
                    class="external-link button is-normal is-rounded is-dark">
@@ -109,6 +105,7 @@
                   <span>arXiv</span>
                 </a>
               </span>
+              <!-- video -->
               <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=CJL5X23rq34"
                    class="external-link button is-normal is-rounded is-dark">
@@ -116,6 +113,37 @@
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
+                </a>
+              <!-- Poster. -->
+              <span class="link-block">
+                <a href= "https://drive.google.com/file/d/1Ir7uycSlLL1h_rf9-AK1oZIiPqx9GqE1/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-image"></i>
+                  </span>
+                  <span>Poster</span>
+                  </a>
+              </span>
+              <!-- google slides -->
+              </span> 
+                <span class="link-block">
+                <a href="https://drive.google.com/file/d/1HXcpJdCI9OgdEj1TJ6EmmCmdO1Dtv6VI/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-solid fa-file-powerpoint"></i>
+                  </span>
+                  <span>Slides</span>
+                </a>
+              </span> 
+              <!-- tweet -->
+              </span> 
+                <span class="link-block">
+                <a href="https://www.x.com/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                  </span>
+                  <span>Tweet</span>
                 </a>
               </span> 
               <!-- Code Link. -->
@@ -133,7 +161,7 @@
                 <a href="https://www.dropbox.com/scl/fo/c1q9s420pzu1285t1wcud/AGMDPvgD5R1ilUFId0i94KE?rlkey=7lwmxnjagi7k9kgimd4v7fwaq&dl=0"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="fa-solid fa-database"></i>
                   </span>
                   <span>Data</span>
                   </a>
@@ -153,6 +181,7 @@
   <iframe style="width: 40%; height: 23vw;" src="https://www.youtube.com/embed/CJL5X23rq34?si=bwbidpeJhDu4p88R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+<!-- Abstract section -->
 <section class="section">
   <div style="margin-top: -5vh;"></div>
   <div class="container is-max-desktop">
@@ -181,9 +210,9 @@
     <img src="lambda_cover.png" alt="Overview figure"               
     style="
     display: inline-block;        /* for text-align centering */
-    transform: scale(1.25);       /* make it 125% as big */
+    transform: scale(0.8);       /* make it 125% as big */
     transform-origin: top center; /* grow *downward* only */
-    margin-bottom: 7rem;
+    margin-bottom: -5rem;
   ">
   </div>
   
@@ -197,26 +226,26 @@
    <br>
 
    <div style="text-align: center;">
-    <img src="rw.png" alt="Related works figure" 
+    <img src="table.png" alt="Related works figure" 
     style="
     display: inline-block;        /* for text-align centering */
-    transform: scale(1.25);       /* make it 125% as big */
+    transform: scale(0.75);       /* make it 125% as big */
     transform-origin: top center; /* grow *downward* only */
-    margin-bottom: 6rem;
+    margin-bottom: -5rem;
   ">
   </div>
 
   <br>
 
    <p>
-    Existing benchmarks for MoMa robotics often lack critical elements necessary for real-world applicability, such as natural language conditioning, long-horizon tasks, human-collected demonstrations, and real-world validation. Most benchmarks either rely on planner-generated data, templated commands, or are restricted to tabletop manipulation, limiting their realism and utility. Very few benchmarks offer free-form natural language instructions, quadruped robot data, or multi-room/floor navigation. The λ benchmark uniquely integrates all these elements, addressing significant gaps and providing a comprehensive evaluation framework for realistic, long-horizon MoMa tasks.
+    Existing benchmarks for MoMa robotics often lack critical elements necessary for real-world applicability, such as natural language conditioning, long-horizon tasks, human-collected demonstrations, and real-world validation. Most benchmarks either rely on planner-generated data, templated commands, or are restricted to tabletop manipulation, limiting their realism and utility. Very few benchmarks offer free-form natural language instructions, quadruped robot data, or multi-room/floor navigation. The λ benchmark uniquely integrates all these elements, addressing significant gaps and providing a comprehensive evaluation framework for realistic, long-horizon MoMa tasks. (See full table in paper).
    </p>
   </div>
 
   <br>
   <br>
-  <br>
 
+  <!-- Demonstration section -->
   <section class="section" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">
     <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
       <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
@@ -231,9 +260,9 @@
                 alt="Trajectory figure"
                 style="
                   display: inline-block;        /* for text-align centering */
-                  transform: scale(1.25);       /* make it 125% as big */
+                  transform: scale(0.8);       /* make it 125% as big */
                   transform-origin: top center; /* grow *downward* only */
-                  margin-bottom: 6rem;
+                  margin-bottom: -5rem;
                 ">
             </div>
             
@@ -242,9 +271,9 @@
             <!-- second image bumped to 100vw (wider than the first) -->
             <div style="text-align: center; margin-top: 1rem; overflow: visible;">
               <img
-                src="traj_split_table.png"
+                src="transition_fig_transparent.png"
                 alt="Second demonstration figure"
-                style="width:45vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
+                style="width:30vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
               >
             </div>
 
@@ -263,8 +292,58 @@
   
   
   <br>
+
+
+  <!-- Challenges section -->
+  <section class="section" style="margin-top: 0; margin-bottom: 0; padding-top: 0;">
+    <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
+      <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
+        <div class="column is-four-fifths" style="margin-top: 0; padding-top: 0;">
+          <h2 class="title is-3" style="margin-top: -5px;">Benchmark's Challenges</h2>
+          <div class="content has-text-justified">
+            
+            <p><b>1. Data efficiency:</b> Only hundreds of demonstrations -- not hundreds of thousands</p>
+            <!-- first image stays at 80vw -->
+            <div style="text-align: center;">
+              <img
+                src="eff_fig-transparent.png"
+                alt="First challenge figure"
+                style="
+                  display: inline-block;        /* for text-align centering */
+                  transform: scale(0.85);       /* make it 125% as big */
+                  transform-origin: top center; /* grow *downward* only */
+                  margin-bottom: -1rem;
+                ">
+            </div>
+            
+            <br>
+            
+            <p><b>2. Long-horizon:</b> Complex MoMa action and observation spaces across rooms and floors</p>
+            
+            <br>
+
+            <p><b>3. Language understanding</b> of free-form instructions, that can be ambiguous, of real-world human needs</p>
+
+
+            <!-- second image bumped to 100vw (wider than the first) -->
+            <div style="text-align: center; margin-top: 1rem; overflow: visible;">
+              <img
+                src="ziyi_nl.png"
+                alt="Second challenge figure"
+                style="width:25vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
+              >
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
   <br>
 
+  <!-- Results section -->
   <section class="section" style="padding: 0; overflow: visible;">
     <div class="container is-max-desktop" style="padding: 0; overflow: visible;">
             <div class="columns"
@@ -288,14 +367,14 @@
             </div>
             
             <p>
-              To establish baseline performance for λ, we benchmarked two behavior cloning (BC) models: RT-1, a transformer-based MoMa model originally trained on large-scale robot data, and MotionGlot-MoMa, an adapted version of MotionGlot designed for multi-embodiment action generation. Both models were evaluated when trained from scratch and after fine-tuning their pretrained parameters. Additionally, we evaluated LIMP, a zero-shot neuro-symbolic system integrating large multimodal foundation models with task and motion planning, requiring no robot demonstration training. Models were assessed using a success rate metric, where tasks comprise sequential subtasks: navigating to an object, grasping, transporting, and placing it at the goal location, measuring performance comprehensively across long-horizon tasks.
+              To establish baseline performance for λ, we benchmarked two behavior cloning (BC) models: RT-1, a transformer-based MoMa model originally trained on large-scale robot data, and MotionGlot-MoMa, an adapted version of MotionGlot designed for multi-embodiment action generation. Both models were evaluated when trained from scratch and after fine-tuning their pretrained parameters. Additionally, we evaluated LIMP, a zero-shot neuro-symbolic system integrating large multimodal foundation models with task and motion planning, requiring no robot demonstration training. Models were assessed using a success rate metric, where tasks comprise sequential subtasks: navigating to an object, grasping, transporting, and placing it at the goal location, measuring performance comprehensively across long-horizon tasks. Two generalization experiments were conducted: Scene Generalization, testing models on unseen environments with novel layouts and object placements, and Task Generalization, evaluating performance on unseen tasks within known environments.
             </p>
 
             <br>
 
             <div class="wide-bleed" style="text-align: center; margin-top: 1rem; overflow: visible;">
               <img
-                src="scene_gen.png"
+                src="scene_gen2.PNG"
                 alt="Scene generalization experiment figure"
                 style="width:33vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
               >
@@ -304,14 +383,14 @@
             <br>
 
             <p>
-              RT-1 and MG-MoMa achieved low success rates averaging 2.7% and 2.4%, respectively, indicating significant challenges in generalizing to unseen environments with novel room layouts and object placements. Both models marginally surpassed a random baseline, confirming minimal learning. Performance varied slightly across scenes based on complexity and spatial constraints, with simpler tasks achieving slightly higher scores. Overall, the results underscore current limitations in end-to-end models for scene generalization in long-horizon MoMa tasks.
+              For Scene Generalization, RT-1 and MG-MoMa achieved low success rates averaging 2.7% and 2.4%, respectively, indicating significant challenges in generalizing to unseen environments with novel room layouts and object placements. Both models marginally surpassed a random baseline, confirming minimal learning. Performance varied slightly across scenes based on complexity and spatial constraints, with simpler tasks achieving slightly higher scores. Overall, the results underscore current limitations in end-to-end models for scene generalization in long-horizon MoMa tasks.
             </p>
 
             <br>
 
             <div style="text-align: center; margin-top: 1rem; overflow: visible;">
               <img
-                src="task_gen.png"
+                src="task_gen2.png"
                 alt="Task generalization experiment figure"
                 style="width:33vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
               >
@@ -319,12 +398,37 @@
             
             <br>
 
-
             <p>
-              In task generalization, RT-1 and MG-MoMa exhibited slightly improved but still low success rates, around 5%. Fine-tuning these models with pretrained parameters did not substantially enhance performance, indicating limited benefits from pretraining on external data. Conversely, LIMP, the zero-shot neuro-symbolic system, significantly outperformed end-to-end models with a 44.4% success rate. This result highlights the promise of neuro-symbolic approaches in generalizing to novel tasks without robot-specific demonstration training.
+              In Task Generalization, RT-1 and MG-MoMa exhibited slightly improved but still low success rates, around 5%. Conversely, LIMP, the zero-shot neuro-symbolic system, significantly outperformed end-to-end models with a 44.4% success rate. This result highlights the promise of neuro-symbolic approaches in generalizing to novel tasks without robot-specific demonstration training.
             </p>
 
-     
+            <br>
+
+            <div style="text-align: center; margin-top: 1rem; overflow: visible;">
+              <img
+                src="ft.png"
+                alt="Task generalization fine-tuning experiment figure"
+                style="width:33vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"
+              >
+            </div>
+
+            <br>
+            
+            <div style="text-align: center; margin-top: 1rem; overflow: visible;">
+              <img
+                src="seen_vs_unseen.PNG"
+                alt="Seen vs unseen figure"
+                style="width:45vw; max-width:none; height:auto; display:block; position:relative; left:50%; transform:translateX(-50%);"              >
+            </div>
+            
+            <br>
+
+            <p>
+              For Task Generalization, we compare results on seen and unseen tasks. While the performance of the baselines is equal for the seen settings, RT-1 outperforms MG-MoMa by 0.9% on the unseen environments. The similar performance also indicates that the models did not overfit. 
+            </p>
+            <p>
+              We also experiment with fine-tuning the pretrained parameters instead of training from scratch, on the Task Generalization experiment. These fine-tuned models did not substantially enhance performance, indicating limited benefits from pretraining on external data. However, MG-MoMa exhibited relatively lower performance on seen tasks compared to unseen tasks when fine-tuned. This may mean that the pretrained parameters biased the models toward their original training tasks and away from effectively adapting to the unique challenges of λ, especially since the original models were trained on real-world data.
+            </p>
 
   
         </div>
@@ -335,8 +439,8 @@
   <br>
   <br>
   <br>
-  <br>
 
+  <!-- Ablations section -->
   <section>
     <div class="container is-max-desktop" style="margin-top: 0; padding-top: 0;">
       <div class="columns is-centered has-text-centered" style="margin-top: 0; padding-top: 0;">
@@ -350,7 +454,7 @@
               alt="Ablations figure"
               style="
                 display: inline-block;
-                transform: scale(1.25);
+                transform: scale(0.75);
                 transform-origin: top center;
               "
             >
@@ -360,16 +464,14 @@
     </div>
   </section>
   
-  <div class="container is-max-desktop" style="margin-top: 7rem;">
+  <div class="container is-max-desktop" style="margin-top: -5rem;">
     <p>
-      We investigated how varying dataset sizes and model architectures impact data efficiency in MoMa tasks. Increasing the dataset size from 25% to 100% led to modest performance improvements for RT-1, indicating data inefficiency. Architectural comparisons revealed that replacing RT-1's transformer with a Mamba architecture (RM-1) resulted in consistently better performance across all dataset sizes, outperforming both the transformer and LSTM alternatives. These findings suggest that architectural choices significantly influence data efficiency, with Mamba-based models demonstrating superior generalization capabilities for long-horizon MoMa tasks.
+      We investigated if data inefficiency played a role in the poor performance. We did that by varying the dataset size. Increasing the dataset size from 25% to 100% led to modest performance improvements for RT-1, indicating data inefficiency.
+    </p>
+    <p>
+      To investigate the cause of the data inefficiency, we perform architectural comparisons. They revealed that replacing RT-1's transformer with a Mamba architecture (RM-1) resulted in consistently better performance across all dataset sizes, outperforming both the transformer and LSTM alternatives. RM-1's trend (average rate of change) was also constant. These findings suggest that architectural choices influence data efficiency, with the Mamba-based model demonstrating superior generalization capabilities for our long-horizon MoMa tasks.
     </p>
   </div>
-  
-
-  <br>
-  <br>
-  <br>
 
   </section>
 
@@ -382,7 +484,7 @@
     </div>
 </section>
 
-
+<!-- Acknowledgements section -->
 <section class="section">
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
@@ -398,9 +500,6 @@
 </section>
 
 <br>
-<br>
-<br>
-<br>
 
 <section class="section">
   <div style="margin-top: -11vh;"></div>
@@ -410,15 +509,15 @@
 <div class="code-container">
   <div class="code-block" style="flex: 1 1 90%; max-width: 65%;">
   <pre><code>
-    @misc{lambdabenchmark,
-      title={{\lambda}: A Benchmark for Data-Efficiency in Long-Horizon Indoor Mobile Manipulation Robotics}, 
-      author={Ahmed Jaafar and Shreyas Sundara Raman and Yichen Wei and Sofia Juliani and Anneke Wernerfelt and Benedict Quartey and Ifrah Idrees and Jason Xinyu Liu and Stefanie Tellex},
-      year={2025},
-      eprint={2412.05313},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2412.05313}, 
-    }
+  @misc{lambdabenchmark,
+        title={{\lambda}: A Benchmark for Data-Efficiency in Long-Horizon Indoor Mobile Manipulation Robotics}, 
+        author={Ahmed Jaafar and Shreyas Sundara Raman and Sudarshan Harithas and Yichen Wei and Sofia Juliani and Anneke Wernerfelt and Benedict Quartey and Ifrah Idrees and Jason Xinyu Liu and Stefanie Tellex},
+        year={2025},
+        eprint={2412.05313},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2412.05313}, 
+  }
   </code></pre>
 </div>
 </div>
